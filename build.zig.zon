@@ -1,5 +1,5 @@
 .{
-    .name = .zudp,
+    .name = .ConcurrentQueue,
 
     .version = "0.0.0",
 
