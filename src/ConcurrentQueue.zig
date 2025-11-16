@@ -47,7 +47,7 @@ pub fn ConcurrentQueue(comptime DataType: type, comptime fragments: usize, compt
             self.fragments[index].append(&nodePtr.node);
             return removable{ .index = index, .node = &nodePtr.node };
         }
-
+        ///TODO removing is not implemented yet
         pub const removable = struct {
             index: usize,
             node: *std.DoublyLinkedList.Node,
@@ -237,7 +237,7 @@ test "benchmark: multithreaded throughput - non-strict FIFO" {
 
     const num_threads = 16;
     const ops_per_thread = 12_500;
-    const total_ops =  ops_per_thread * 2;
+    const total_ops = ops_per_thread * 2;
 
     var threads: [num_threads]std.Thread = undefined;
     var context = BenchContext{ .queue = &queue, .operations = ops_per_thread };
