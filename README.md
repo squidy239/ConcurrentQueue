@@ -57,7 +57,7 @@ ConcurrentQueue(DataType, fragments, strictFIFO)
 - strictFIFO - true for perfect ordering ordered, false for faster speed
 
 Methods
-- ziginit(allocator)           // Create queue
+- init(allocator)           // Create queue
 - deinit(assertEmpty)       // Cleanup (assertEmpty: panic if not empty)
 - append(data)              // Add item → !removable
 - note: removable is currently not yet implemented
