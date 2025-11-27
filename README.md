@@ -1,3 +1,4 @@
+moved to codeberg: https://codeberg.org/glowsquid/ConcurrentQueue
 # ConcurrentQueue
 
 **A thread-safe, multi-producer multi-consumer queue written in Zig that uses fragment-based sharding to minimize lock contention.**
